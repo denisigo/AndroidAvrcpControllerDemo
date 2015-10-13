@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidAvrcpControllerDemo</string>
+
+    <string name="command_play">Play</string>
+    <string name="command_stop">Stop</string>
+    <string name="command_pause">Pause</string>
+    <string name="command_next">Next</string>
+    <string name="command_prev">Prev</string>
+</resources>
