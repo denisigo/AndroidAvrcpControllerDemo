@@ -36,17 +36,17 @@
                   android:layout_height="wrap_content"
                   android:orientation="horizontal">
 
-        <Button android:id="@+id/nextButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/command_next"
-                android:onClick="onNextButtonClick"/>
-
         <Button android:id="@+id/prevButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/command_prev"
                 android:onClick="onPrevButtonClick"/>
+
+        <Button android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/command_next"
+                android:onClick="onNextButtonClick"/>
 
     </LinearLayout>
 
