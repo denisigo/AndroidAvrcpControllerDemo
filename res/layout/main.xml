@@ -8,6 +8,12 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"/>
 
+    <TextView android:id="@+id/attrs"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:layout_marginBottom="3dp"/>
+
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal">
@@ -47,6 +53,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/command_next"
                 android:onClick="onNextButtonClick"/>
+
+        <Button android:id="@+id/getAttrsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/command_get_attrs"
+                android:onClick="onGetAttrsButtonClick"/>
 
     </LinearLayout>
 

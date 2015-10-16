@@ -7,4 +7,5 @@
     <string name="command_pause">Pause</string>
     <string name="command_next">Next</string>
     <string name="command_prev">Prev</string>
+    <string name="command_get_attrs">Get Attrs</string>
 </resources>
