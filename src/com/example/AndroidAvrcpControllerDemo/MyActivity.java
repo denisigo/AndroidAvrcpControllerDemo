@@ -105,7 +105,11 @@ public class MyActivity extends Activity {
 
         int[] attrs = {BluetoothAvrcp.MEDIA_ATTR_TITLE,
                 BluetoothAvrcp.MEDIA_ATTR_ARTIST,
-                BluetoothAvrcp.MEDIA_ATTR_ALBUM};
+                BluetoothAvrcp.MEDIA_ATTR_ALBUM,
+                BluetoothAvrcp.MEDIA_ATTR_PLAYING_TIME,
+                BluetoothAvrcp.MEDIA_ATTR_NUM_TRACKS,
+                BluetoothAvrcp.MEDIA_ATTR_TRACK_NUM,
+        };
         List<BluetoothDevice> devices = mAvrcpController.getConnectedDevices();
         for (BluetoothDevice device : devices){
             Log.d(TAG, "send getAttrs to device: " + device.getName() + " " + device.getAddress());
@@ -135,13 +139,13 @@ public class MyActivity extends Activity {
                             mAttrsView.append("Artist: " + values[i] + "\r\n");
                         else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_ALBUM)
                             mAttrsView.append("Album: " + values[i] + "\r\n");
-                        /*else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_GENRE)
+                        else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_GENRE)
                             mAttrsView.append("Genre: " + values[i] + "\r\n");
                         else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_NUM_TRACKS)
                             mAttrsView.append("Num tracks: " + values[i] + "\r\n");
                         else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_TRACK_NUM)
                             mAttrsView.append("Track num: " + values[i] + "\r\n");
-                        */
+
                         else if (attrs[i] == BluetoothAvrcp.MEDIA_ATTR_PLAYING_TIME)
                             mAttrsView.append("Playing time: " + values[i] + " ms \r\n");
 
